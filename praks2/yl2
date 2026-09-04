@@ -1,0 +1,17 @@
+#!/bin/bash
+# Skript väljastab praeguse kuupäeva, kellaaja ja jooksva kuu kalendri
+
+# Väljastab nädalapäeva, kuu nime, kuupäeva ja aasta
+date +"Today is %A, %B %d, %Y"
+
+# Väljastab kellaaja (tunnid ja minutid)
+date +"Time is %H:%M"
+
+# Tühi rida loetavuse tagamiseks
+echo
+
+# Väljastab kalendri päise
+date +"Calendar of %B %Y"
+
+# Väljastab kalendri (ilma vaikimisi päiseta, võttes viimased 7 rida)
+cal | tail -n 7
